@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="mr" xml:lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> शब्द संकलन </title>
+    <link rel="stylesheet" href="scramble.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/words.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+
+    <div class="container">
+
+        <h2><b> शब्द संकलन </b></h2>
+        <center><div class="startArea" onclick="start()"><button class="startBtn">खेळ सुरू करा</button></div></center>
+
+        <div class="content">
+            <p class="word"></p>
+            <div class="details">
+                <p class="hint">अर्थ आणि सूचना: <span></span></p>
+                <p class="time">वेळ बाकी: <span><b>30</b>s</span></p>
+            </div>
+            <input type="text" id="marathiInput" name="marathiInput" spellcheck="false" placeholder="एक वैध शब्द प्रविष्ट करा">
+            <div class="buttons">
+                <button class="refresh-word">शब्द पुन्हा व्यवस्थित दाखवा</button>
+                <button class="check-word">शब्द तपासा</button>
+            </div>
+            <div class="score-area"><span>गुण: </span><span class="score">0</span></div>
+        </div>
+    </div>
+
+    
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalText"></p>
+    </div></div>
+
+    
+  </body>
+</html>
